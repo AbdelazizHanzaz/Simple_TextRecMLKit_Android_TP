@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_display_photo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardElevation="4dp"
+    android:visibility="visible"
+    app:cardCornerRadius="8dp"
+    tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
+            />
+        <com.google.android.material.chip.Chip
+            android:layout_gravity="bottom|end"
+            android:id="@+id/showText"
+            android:textStyle="bold"
+            android:text="T"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/btnCamera"
+            android:layout_gravity="bottom|start"
+            android:text="Camera"
+            app:chipIcon="@drawable/ic_baseline_camera_24"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+         <TextView
+             android:id="@+id/tv_text"
+             android:textColor="@color/white"
+             android:background="@color/purple_500"
+             android:layout_gravity="center"
+             android:layout_margin="8dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             />
+      <EditText
+          android:id="@+id/editText_text"
+          android:layout_width="match_parent"
+          android:gravity="start"
+          android:padding="8dp"
+          android:layout_marginBottom="48dp"
+          android:text="send"
+          android:visibility="gone"
+          android:inputType="textMultiLine"
+          android:layout_height="match_parent"/>
+
+
+
+
+</androidx.cardview.widget.CardView>
